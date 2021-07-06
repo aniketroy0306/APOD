@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="search">
+        <div class="title">
+            <h1>Pocket Space Explorer</h1>
+            <div class="intro">
+                <p>Welcome Space Enthusiasts! Each day a different image or photograph of our universe is featured, along with a brief explanation written by a professional astronomer. Enter a date and start exploring...</p>
+            </div>
+        </div>
+        <div class="input">
+            <input id="dateSearch" placeholder="Date in YYYY-MM-DD...">
+        </div>
+        <div class="button">
+            <button id="submit" onclick="call()">Explore!</button>
+        </div>
+        <div class="button">
+            <button id="submit" onclick="random()">Random!</button>
+        </div>
+        <div hidden id="spinner"></div>
+        <div class="result">
+            <span>
+                <h2 id="title"></h2>
+            </span>           
+            <span>
+                <img id="spacePic" src="" alt="">
+            </span>
+            <span>
+                <h3 id="dateOfPic"></h3>
+            </span>
+            <span>
+                <p id="description"></p>
+            </span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #084350;
+    color: #fff;
+}
+
+.search input {
+    font-family: sans-serif;
+    display: block;
+    width: 100%;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #FFF3E6;
+    padding: 15px 30px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.search input:focus {
+    box-shadow: 0 0 10px 4px #A2DBFA;
+}
+
+.search button {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #FFF3E6;
+    color: #865439;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.search button:hover{
+    background: #A2DBFA;
+}
+
+#spinner:not([hidden]) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#spinner::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+    will-change: transform;
+    animation: spin 1s infinite linear
+}
+  
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.search {
+    display: grid;
+    place-items: center;
+    padding: 20px 10px;
+}
+
+.search .title {
+    display: grid;
+    place-items: center;
+    max-width: 80%;
+    text-align: center;
+}
+
+.search .title h1 {
+    margin-bottom: 10px;
+}
+
+.search .result {
+    display: grid;
+    place-items: center;
+}
+
+.search .result h2 {
+    text-align: center;
+}
+
+.search .result p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 100px;
+}
+
+@media (max-width: 991px)
+{
+    .search .result img {
+        max-width: 100%;
+    }
+}
